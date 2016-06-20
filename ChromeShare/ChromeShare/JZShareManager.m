@@ -7,13 +7,17 @@
 //
 
 #import "JZShareManager.h"
+#import "JZSettingsController.h"
+static NSString *const MASOpenMenuShortcutKey = @"openMenuShortcutKey";
 
 @interface JZShareManager()<NSSharingServiceDelegate>
+
+@property (nonatomic,strong) NSPopover *settingsPopover;
 
 @end
 
 @implementation JZShareManager
-@synthesize statusItem,statusBarMenu;
+@synthesize statusItem,statusBarMenu,settingsPopover;
 
 #pragma mark Singleton Methods
 
@@ -68,21 +72,45 @@
     
     [statusBarMenu addItem:[NSMenuItem separatorItem]];
     
-    [statusBarMenu addItem:[[NSMenuItem alloc] initWithTitle:@"Settings" action:@selector(goSettings) keyEquivalent:@"S"]];
+    NSMenuItem *settingsItem = [[NSMenuItem alloc] initWithTitle:@"Settings" action:@selector(goSettings) keyEquivalent:@"S"];
+    settingsItem.target = self;
+    [statusBarMenu addItem:settingsItem];
 
     
     [statusBarMenu addItem:[NSMenuItem separatorItem]];
     
     [statusBarMenu addItem:[[NSMenuItem alloc] initWithTitle:@"Quit App" action:@selector(terminate:) keyEquivalent:@"q"]];
 
+    settingsPopover = [[NSPopover alloc] init];
+    JZSettingsController *vc = [[JZSettingsController alloc] initWithNibName:@"JZSettingsController" bundle:nil];
+    vc.popover = settingsPopover;
+    settingsPopover.contentViewController = vc;
+    
+    // Associate the preference key with an action
+    [[MASShortcutBinder sharedBinder]
+     bindShortcutWithDefaultsKey:MASOpenMenuShortcutKey
+     toAction:^
+     {
+         int height = statusItem.button.bounds.size.height + 8;
+         [statusBarMenu popUpMenuPositioningItem:nil atLocation:NSMakePoint(0, height) inView:statusItem.button];  
+     }];
+
 }
 - (void)goSettings
 {
-
+    if (settingsPopover.isShown)
+    {
+        [settingsPopover performClose:self];
+    }
+    else
+    {
+        NSStatusBarButton *btn = statusItem.button;
+        [settingsPopover showRelativeToRect:btn.bounds ofView:btn preferredEdge:NSMinYEdge];
+    }
 }
 - (void)statusBarButtonPressed
 {
-    
+
 }
 
 - (void)shareChromeTab

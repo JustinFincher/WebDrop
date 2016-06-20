@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  JZSettingsController.h
 //  ChromeShare
 //
 //  Created by Fincher Justin on 16/6/20.
@@ -8,9 +8,8 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface JZSettingsController : NSViewController
 
-@property (weak) IBOutlet NSWindow *window;
+@property (nonatomic,weak) NSPopover *popover;
 
 @end
-
