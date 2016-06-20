@@ -2,11 +2,12 @@
   "images" : [
     {
       "idiom" : "mac",
+      "filename" : "102416.png",
       "scale" : "1x"
     },
     {
       "idiom" : "mac",
-      "filename" : "StatusBarButtonImage@2x.png",
+      "filename" : "102432.png",
       "scale" : "2x"
     }
   ],

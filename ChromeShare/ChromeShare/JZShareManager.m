@@ -92,7 +92,7 @@ static NSString *const MASOpenMenuShortcutKey = @"openMenuShortcutKey";
      toAction:^
      {
          int height = statusItem.button.bounds.size.height + 8;
-         [statusBarMenu popUpMenuPositioningItem:nil atLocation:NSMakePoint(0, height) inView:statusItem.button];  
+         [statusBarMenu popUpMenuPositioningItem:nil atLocation:NSMakePoint(0, height) inView:statusItem.button];
      }];
 
 }
@@ -149,7 +149,7 @@ static NSString *const MASOpenMenuShortcutKey = @"openMenuShortcutKey";
         NSAppleEventDescriptor *unicode = [descriptor coerceToDescriptorType:typeUnicodeText];
         NSData *data = [unicode data];
         NSString *result = [[NSString alloc] initWithCharacters:(unichar*)[data bytes] length:[data length] / sizeof(unichar)];
-        NSLog(@"Result: %@",result);
+        //NSLog(@"Result: %@",result);
         [self shareString:result];
     }
 }
