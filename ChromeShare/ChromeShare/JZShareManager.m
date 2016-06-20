@@ -54,16 +54,32 @@
     shareSafariMenuItem.target = self;
     [statusBarMenu addItem:shareSafariMenuItem];
     
-    NSMenuItem *shareFirefoxMenuItem = [[NSMenuItem alloc] initWithTitle:@"Share Current Firefox Tab" action:@selector(shareFirefoxTab) keyEquivalent:@"f"];
-    shareFirefoxMenuItem.target = self;
-    [statusBarMenu addItem:shareFirefoxMenuItem];
+//    NSMenuItem *shareFirefoxMenuItem = [[NSMenuItem alloc] initWithTitle:@"Share Current Firefox Tab" action:@selector(shareFirefoxTab) keyEquivalent:@"f"];
+//    shareFirefoxMenuItem.target = self;
+//    [statusBarMenu addItem:shareFirefoxMenuItem];
+    
+//    NSMenuItem *shareOperaMenuItem = [[NSMenuItem alloc] initWithTitle:@"Share Current Opera Tab" action:@selector(shareOperaTab) keyEquivalent:@"o"];
+//    shareOperaMenuItem.target = self;
+//    [statusBarMenu addItem:shareOperaMenuItem];
+    
+    NSMenuItem *shareOperaMenuItem = [[NSMenuItem alloc] initWithTitle:@"Share Current Vivaldi Tab" action:@selector(shareVivaldiTab) keyEquivalent:@"v"];
+    shareOperaMenuItem.target = self;
+    [statusBarMenu addItem:shareOperaMenuItem];
+    
+    [statusBarMenu addItem:[NSMenuItem separatorItem]];
+    
+    [statusBarMenu addItem:[[NSMenuItem alloc] initWithTitle:@"Settings" action:@selector(goSettings) keyEquivalent:@"S"]];
+
     
     [statusBarMenu addItem:[NSMenuItem separatorItem]];
     
     [statusBarMenu addItem:[[NSMenuItem alloc] initWithTitle:@"Quit App" action:@selector(terminate:) keyEquivalent:@"q"]];
 
 }
+- (void)goSettings
+{
 
+}
 - (void)statusBarButtonPressed
 {
     
@@ -81,10 +97,19 @@
 {
     [self getURLWithScript:@"tell application \"Safari\" to return URL of front document as string"];
 }
-- (void)shareFirefoxTab
+//- (void)shareFirefoxTab
+//{
+//    [self getURLWithScript:@"tell application \"Firefox\" to return URL of front window as string"];
+//}
+//- (void)shareOperaTab
+//{
+//    [self getURLWithScript:@"tell application \"Opera\" to return URL of front document as string"];
+//}
+- (void)shareVivaldiTab
 {
-    [self getURLWithScript:@"tell application \"Firefox\" to return URL of front document as string"];
+    [self getURLWithScript:@"tell application \"Vivaldi\" to get URL of active tab of front window as string"];
 }
+
 - (void)getURLWithScript:(NSString *)scriptString
 {
     NSAppleScript *script= [[NSAppleScript alloc] initWithSource:scriptString];
@@ -96,7 +121,7 @@
         NSAppleEventDescriptor *unicode = [descriptor coerceToDescriptorType:typeUnicodeText];
         NSData *data = [unicode data];
         NSString *result = [[NSString alloc] initWithCharacters:(unichar*)[data bytes] length:[data length] / sizeof(unichar)];
-        //NSLog(@"Result: %@",result);
+        NSLog(@"Result: %@",result);
         [self shareString:result];
     }
 }
