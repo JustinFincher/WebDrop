@@ -46,40 +46,32 @@ static NSString *const MASOpenMenuShortcutKey = @"openMenuShortcutKey";
     
     statusBarMenu = [[NSMenu alloc] init];
     statusItem.menu = statusBarMenu;
-    NSMenuItem *shareChromeMenuItem = [[NSMenuItem alloc] initWithTitle:@"Share Current Chrome Tab" action:@selector(shareChromeTab) keyEquivalent:@"c"];
+    NSMenuItem *shareChromeMenuItem = [[NSMenuItem alloc] initWithTitle:NSLocalizedString(@"Share Current Chrome Tab", nil) action:@selector(shareChromeTab) keyEquivalent:@"c"];
     shareChromeMenuItem.target = self;
     [statusBarMenu addItem:shareChromeMenuItem];
     
-    NSMenuItem *shareChromeCanaryMenuItem = [[NSMenuItem alloc] initWithTitle:@"Share Current Chrome Canary Tab" action:@selector(shareChromeCanaryTab) keyEquivalent:@"C"];
+    NSMenuItem *shareChromeCanaryMenuItem = [[NSMenuItem alloc] initWithTitle:NSLocalizedString(@"Share Current Chrome Canary Tab", nil) action:@selector(shareChromeCanaryTab) keyEquivalent:@"C"];
     shareChromeCanaryMenuItem.target = self;
     [statusBarMenu addItem:shareChromeCanaryMenuItem];
     
-    NSMenuItem *shareSafariMenuItem = [[NSMenuItem alloc] initWithTitle:@"Share Current Safari Tab" action:@selector(shareSafariTab) keyEquivalent:@"s"];
+    NSMenuItem *shareSafariMenuItem = [[NSMenuItem alloc] initWithTitle:NSLocalizedString(@"Share Current Safari Tab", nil) action:@selector(shareSafariTab) keyEquivalent:@"s"];
     shareSafariMenuItem.target = self;
     [statusBarMenu addItem:shareSafariMenuItem];
     
-//    NSMenuItem *shareFirefoxMenuItem = [[NSMenuItem alloc] initWithTitle:@"Share Current Firefox Tab" action:@selector(shareFirefoxTab) keyEquivalent:@"f"];
-//    shareFirefoxMenuItem.target = self;
-//    [statusBarMenu addItem:shareFirefoxMenuItem];
-    
-//    NSMenuItem *shareOperaMenuItem = [[NSMenuItem alloc] initWithTitle:@"Share Current Opera Tab" action:@selector(shareOperaTab) keyEquivalent:@"o"];
-//    shareOperaMenuItem.target = self;
-//    [statusBarMenu addItem:shareOperaMenuItem];
-    
-    NSMenuItem *shareOperaMenuItem = [[NSMenuItem alloc] initWithTitle:@"Share Current Vivaldi Tab" action:@selector(shareVivaldiTab) keyEquivalent:@"v"];
+    NSMenuItem *shareOperaMenuItem = [[NSMenuItem alloc] initWithTitle:NSLocalizedString(@"Share Current Vivaldi Tab", nil) action:@selector(shareVivaldiTab) keyEquivalent:@"v"];
     shareOperaMenuItem.target = self;
     [statusBarMenu addItem:shareOperaMenuItem];
     
     [statusBarMenu addItem:[NSMenuItem separatorItem]];
     
-    NSMenuItem *settingsItem = [[NSMenuItem alloc] initWithTitle:@"Settings" action:@selector(goSettings) keyEquivalent:@"S"];
+    NSMenuItem *settingsItem = [[NSMenuItem alloc] initWithTitle:NSLocalizedString(@"Settings", nil) action:@selector(goSettings) keyEquivalent:@"S"];
     settingsItem.target = self;
     [statusBarMenu addItem:settingsItem];
 
     
     [statusBarMenu addItem:[NSMenuItem separatorItem]];
     
-    [statusBarMenu addItem:[[NSMenuItem alloc] initWithTitle:@"Quit App" action:@selector(terminate:) keyEquivalent:@"q"]];
+    [statusBarMenu addItem:[[NSMenuItem alloc] initWithTitle:NSLocalizedString(@"Quit App", nil) action:@selector(terminate:) keyEquivalent:@"q"]];
 
     settingsPopover = [[NSPopover alloc] init];
     JZSettingsController *vc = [[JZSettingsController alloc] initWithNibName:@"JZSettingsController" bundle:nil];
@@ -115,48 +107,100 @@ static NSString *const MASOpenMenuShortcutKey = @"openMenuShortcutKey";
 
 - (void)shareChromeTab
 {
-    [self getURLWithScript:@"tell application \"Google Chrome\" to get URL of active tab of front window as string"];
+    [self getURLWithScript:@"chromeURL"];
 }
 - (void)shareChromeCanaryTab
 {
-    [self getURLWithScript:@"tell application \"Google Chrome Canary\" to get URL of active tab of front window as string"];
+    [self getURLWithScript:@"chromeCanaryURL"];
 }
 - (void)shareSafariTab
 {
-    [self getURLWithScript:@"tell application \"Safari\" to return URL of front document as string"];
+    [self getURLWithScript:@"safariURL"];
 }
-//- (void)shareFirefoxTab
-//{
-//    [self getURLWithScript:@"tell application \"Firefox\" to return URL of front window as string"];
-//}
-//- (void)shareOperaTab
-//{
-//    [self getURLWithScript:@"tell application \"Opera\" to return URL of front document as string"];
-//}
 - (void)shareVivaldiTab
 {
-    [self getURLWithScript:@"tell application \"Vivaldi\" to get URL of active tab of front window as string"];
+    [self getURLWithScript:@"vivaldiURL"];
+}
+
+- (NSUserAppleScriptTask *)automationScriptTask
+{
+    NSUserAppleScriptTask *result = nil;
+    
+    NSError *error;
+    NSURL *directoryURL = [[NSFileManager defaultManager] URLForDirectory:NSApplicationScriptsDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:YES error:&error];
+    if (directoryURL) {
+        NSURL *scriptURL = [directoryURL URLByAppendingPathComponent:@"Automation.scpt"];
+        result = [[NSUserAppleScriptTask alloc] initWithURL:scriptURL error:&error];
+        if (! result) {
+            NSLog(@"%s no AppleScript task error = %@", __PRETTY_FUNCTION__, error);
+        }
+    }
+    else {
+        // NOTE: if you're not running in a sandbox, the directory URL will always be nil
+        NSLog(@"%s no Application Scripts folder error = %@", __PRETTY_FUNCTION__, error);
+    }
+    
+    return result;
+}
+
+- (NSAppleEventDescriptor *)eventDescriptorbyName:(NSString *)string
+{
+    // target
+    ProcessSerialNumber psn = {0, kCurrentProcess};
+    NSAppleEventDescriptor *target = [NSAppleEventDescriptor descriptorWithDescriptorType:typeProcessSerialNumber bytes:&psn length:sizeof(ProcessSerialNumber)];
+    
+    // function
+    NSAppleEventDescriptor *function = [NSAppleEventDescriptor descriptorWithString:string];
+    
+    // event
+    NSAppleEventDescriptor *event = [NSAppleEventDescriptor appleEventWithEventClass:kASAppleScriptSuite eventID:kASSubroutineEvent targetDescriptor:target returnID:kAutoGenerateReturnID transactionID:kAnyTransactionID];
+    [event setParamDescriptor:function forKeyword:keyASSubroutineName];
+    
+    return event;
+}
+- (NSURL *)URLForResultEventDescriptor:(NSAppleEventDescriptor *)resultEventDescriptor
+{
+    NSURL *result = nil;
+    
+    NSString *URLString = nil;
+    if (resultEventDescriptor) {
+        if ([resultEventDescriptor descriptorType] != kAENullEvent) {
+            if ([resultEventDescriptor descriptorType] == kTXNUnicodeTextData) {
+                URLString = [resultEventDescriptor stringValue];
+            }
+        }
+    }
+    
+    result = [NSURL URLWithString:URLString];
+    
+    return result;
 }
 
 - (void)getURLWithScript:(NSString *)scriptString
 {
-    NSAppleScript *script= [[NSAppleScript alloc] initWithSource:scriptString];
-    NSDictionary *scriptError = nil;
-    NSAppleEventDescriptor *descriptor = [script executeAndReturnError:&scriptError];
-    if(scriptError) {
-        NSLog(@"Error: %@",scriptError);
-    } else {
-        NSAppleEventDescriptor *unicode = [descriptor coerceToDescriptorType:typeUnicodeText];
-        NSData *data = [unicode data];
-        NSString *result = [[NSString alloc] initWithCharacters:(unichar*)[data bytes] length:[data length] / sizeof(unichar)];
-        //NSLog(@"Result: %@",result);
-        [self shareString:result];
+    NSUserAppleScriptTask *automationScriptTask = [self automationScriptTask];
+    if (automationScriptTask) {
+        NSAppleEventDescriptor *event = [self eventDescriptorbyName:scriptString];
+        [automationScriptTask executeWithAppleEvent:event completionHandler:^(NSAppleEventDescriptor *resultEventDescriptor, NSError *error) {
+            if (! resultEventDescriptor) {
+                NSLog(@"%s AppleScript task error = %@", __PRETTY_FUNCTION__, error);
+            }
+            else {
+                
+                
+                NSURL *URL = [self URLForResultEventDescriptor:resultEventDescriptor];
+                // NOTE: The completion handler for the script is not run on the main thread. Before you update any UI, you'll need to get
+                // on that thread by using libdispatch or performing a selector.
+                
+                
+                [self performSelectorOnMainThread:@selector(shareString:) withObject:URL waitUntilDone:NO];
+            }
+        }];
     }
 }
--(void)shareString:(NSString *)urlString
+-(void)shareString:(NSURL *)url
 {
     NSSharingService * service = [NSSharingService sharingServiceNamed:NSSharingServiceNameSendViaAirDrop];
-    NSURL *url = [NSURL URLWithString:urlString];
     NSArray * shareItems = [NSArray arrayWithObjects:url, nil];
     service.delegate = self;
     [service performWithItems:shareItems];

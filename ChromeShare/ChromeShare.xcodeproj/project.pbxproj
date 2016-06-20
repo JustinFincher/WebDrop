@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D761E2D1D187EC200E8D28D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0D761E2F1D187EC200E8D28D /* Localizable.strings */; };
 		0DAF42021D18097500D886E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF42011D18097500D886E4 /* AppDelegate.m */; };
 		0DAF42051D18097500D886E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF42041D18097500D886E4 /* main.m */; };
 		0DAF42071D18097500D886E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DAF42061D18097500D886E4 /* Assets.xcassets */; };
@@ -16,8 +17,9 @@
 		0DAF422F1D18099600D886E4 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DAF422E1D18099600D886E4 /* AppKit.framework */; };
 		0DAF42321D180D0C00D886E4 /* JZShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF42311D180D0C00D886E4 /* JZShareManager.m */; };
 		0DAF42441D1829E400D886E4 /* JZSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF42421D1829E400D886E4 /* JZSettingsController.m */; };
-		0DAF42451D1829E400D886E4 /* JZSettingsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DAF42431D1829E400D886E4 /* JZSettingsController.xib */; };
 		0DC6916C1D183629009533BA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DC6916B1D183629009533BA /* Cocoa.framework */; };
+		0DDD12AE1D1869EF0043AE0E /* Automation.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 0DDD12AD1D1869EF0043AE0E /* Automation.scpt */; };
+		0DDD12AF1D1878350043AE0E /* JZSettingsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DDD12B11D1878350043AE0E /* JZSettingsController.xib */; };
 		94717ED1491D1B40C92A3322 /* libPods-ChromeShareUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D31BB332771013D02469BD83 /* libPods-ChromeShareUITests.a */; };
 		C0431BD7E62C55AE1F2773EE /* libPods-ChromeShareTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0829174101CBD589669E4E14 /* libPods-ChromeShareTests.a */; };
 		E2393ADEAB9BD32F289955B9 /* libPods-ChromeShare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 101C1FAD4574347F531062A1 /* libPods-ChromeShare.a */; };
@@ -42,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		0829174101CBD589669E4E14 /* libPods-ChromeShareTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChromeShareTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D761E2E1D187EC200E8D28D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		0D761E301D18816500E8D28D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		0DAF41FD1D18097500D886E4 /* ChromeShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChromeShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DAF42001D18097500D886E4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0DAF42011D18097500D886E4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -60,9 +64,12 @@
 		0DAF42311D180D0C00D886E4 /* JZShareManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZShareManager.m; sourceTree = "<group>"; };
 		0DAF42411D1829E400D886E4 /* JZSettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZSettingsController.h; sourceTree = "<group>"; };
 		0DAF42421D1829E400D886E4 /* JZSettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZSettingsController.m; sourceTree = "<group>"; };
-		0DAF42431D1829E400D886E4 /* JZSettingsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JZSettingsController.xib; sourceTree = "<group>"; };
 		0DC6916B1D183629009533BA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		0DDD12AC1D18631A0043AE0E /* ChromeShare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ChromeShare.entitlements; sourceTree = "<group>"; };
+		0DDD12AD1D1869EF0043AE0E /* Automation.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = Automation.scpt; sourceTree = "<group>"; };
+		0DDD12B01D1878350043AE0E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/JZSettingsController.xib; sourceTree = "<group>"; };
+		0DDD12B31D1878680043AE0E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/JZSettingsController.xib"; sourceTree = "<group>"; };
+		0DDD12B51D18786C0043AE0E /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hant"; path = "zh-Hant.lproj/JZSettingsController.xib"; sourceTree = "<group>"; };
 		101C1FAD4574347F531062A1 /* libPods-ChromeShare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChromeShare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		541DFBE236984E318FB1EDB6 /* Pods-ChromeShareTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChromeShareTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChromeShareTests/Pods-ChromeShareTests.release.xcconfig"; sourceTree = "<group>"; };
 		6EE533726A786B7BA082A5F7 /* Pods-ChromeShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChromeShare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChromeShare/Pods-ChromeShare.debug.xcconfig"; sourceTree = "<group>"; };
@@ -135,7 +142,9 @@
 				0DAF42311D180D0C00D886E4 /* JZShareManager.m */,
 				0DAF42411D1829E400D886E4 /* JZSettingsController.h */,
 				0DAF42421D1829E400D886E4 /* JZSettingsController.m */,
-				0DAF42431D1829E400D886E4 /* JZSettingsController.xib */,
+				0D761E2F1D187EC200E8D28D /* Localizable.strings */,
+				0DDD12B11D1878350043AE0E /* JZSettingsController.xib */,
+				0DDD12AD1D1869EF0043AE0E /* Automation.scpt */,
 				0DAF42061D18097500D886E4 /* Assets.xcassets */,
 				0DAF42081D18097500D886E4 /* MainMenu.xib */,
 				0DAF420B1D18097500D886E4 /* Info.plist */,
@@ -302,6 +311,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				"zh-Hant",
 			);
 			mainGroup = 0DAF41F41D18097500D886E4;
 			productRefGroup = 0DAF41FE1D18097500D886E4 /* Products */;
@@ -320,7 +331,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DAF42451D1829E400D886E4 /* JZSettingsController.xib in Resources */,
+				0D761E2D1D187EC200E8D28D /* Localizable.strings in Resources */,
+				0DDD12AE1D1869EF0043AE0E /* Automation.scpt in Resources */,
+				0DDD12AF1D1878350043AE0E /* JZSettingsController.xib in Resources */,
 				0DAF42071D18097500D886E4 /* Assets.xcassets in Resources */,
 				0DAF420A1D18097500D886E4 /* MainMenu.xib in Resources */,
 			);
@@ -509,12 +522,31 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		0D761E2F1D187EC200E8D28D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D761E2E1D187EC200E8D28D /* zh-Hans */,
+				0D761E301D18816500E8D28D /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		0DAF42081D18097500D886E4 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				0DAF42091D18097500D886E4 /* Base */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		0DDD12B11D1878350043AE0E /* JZSettingsController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0DDD12B01D1878350043AE0E /* en */,
+				0DDD12B31D1878680043AE0E /* zh-Hans */,
+				0DDD12B51D18786C0043AE0E /* zh-Hant */,
+			);
+			name = JZSettingsController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -558,7 +590,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -597,7 +629,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};

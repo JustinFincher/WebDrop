@@ -85,6 +85,28 @@ static void *MASObservingContext = &MASObservingContext;
     [[NSWorkspace sharedWorkspace] openURL:url];
 }
 
+- (IBAction)deleteScriptsButtonPressed:(id)sender
+{
+    NSError *error;
+    NSURL *directoryURL = [[NSFileManager defaultManager] URLForDirectory:NSApplicationScriptsDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:YES error:&error];
+    NSURL *destinationURL = [directoryURL URLByAppendingPathComponent:@"Automation.scpt"];
+    NSString *path = [destinationURL path];
+    
+    if ([[NSFileManager defaultManager] fileExistsAtPath:path isDirectory:NO])
+    {
+        
+        BOOL success = [[NSFileManager defaultManager] removeItemAtURL:destinationURL error:&error];
+        if (!success)
+        {
+            NSLog(@"Error removing file at path: %@", error.localizedDescription);
+        }else
+        {
+            [self performSelector:@selector(terminate:)];
+        }
+    }
+    
+    
+}
 
 - (IBAction)closeButtonPressed:(id)sender
 {

@@ -1,0 +1,11 @@
+"Share Current Chrome Tab" = "分享当前 Chrome Tab";
+"Share Current Chrome Canary Tab" = "分享当前 Chrome Canary Tab";
+"Share Current Safari Tab" = "分享当前 Safari Tab";
+"Share Current Vivaldi Tab" = "分享当前 Vivaldi Tab";
+"Settings" = "设置";
+"Quit App" = "退出";
+"OK" = "好";
+"Select Script Folder" = "请选择脚本所在文件夹";
+"Script Installed" = "脚本安装完成";
+"The Automation script was installed succcessfully." = "自动化脚本已经安装，可以使用";
+"Please select the Current User > Library > Application Scripts > com.JustZht.ChromeShare folder to install WebDrop Scripts" = "请选择当前文件夹 User > Library > Application Scripts > com.JustZht.ChromeShare 以正确安装 WebDrop 脚本";
