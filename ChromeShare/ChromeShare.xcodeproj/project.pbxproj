@@ -15,6 +15,9 @@
 		0DAF42201D18097500D886E4 /* ChromeShareUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF421F1D18097500D886E4 /* ChromeShareUITests.m */; };
 		0DAF422F1D18099600D886E4 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DAF422E1D18099600D886E4 /* AppKit.framework */; };
 		0DAF42321D180D0C00D886E4 /* JZShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF42311D180D0C00D886E4 /* JZShareManager.m */; };
+		94717ED1491D1B40C92A3322 /* libPods-ChromeShareUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D31BB332771013D02469BD83 /* libPods-ChromeShareUITests.a */; };
+		C0431BD7E62C55AE1F2773EE /* libPods-ChromeShareTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0829174101CBD589669E4E14 /* libPods-ChromeShareTests.a */; };
+		E2393ADEAB9BD32F289955B9 /* libPods-ChromeShare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 101C1FAD4574347F531062A1 /* libPods-ChromeShare.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0829174101CBD589669E4E14 /* libPods-ChromeShareTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChromeShareTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DAF41FD1D18097500D886E4 /* ChromeShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChromeShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DAF42001D18097500D886E4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0DAF42011D18097500D886E4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +55,14 @@
 		0DAF422E1D18099600D886E4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		0DAF42301D180D0C00D886E4 /* JZShareManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZShareManager.h; sourceTree = "<group>"; };
 		0DAF42311D180D0C00D886E4 /* JZShareManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZShareManager.m; sourceTree = "<group>"; };
+		101C1FAD4574347F531062A1 /* libPods-ChromeShare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChromeShare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		541DFBE236984E318FB1EDB6 /* Pods-ChromeShareTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChromeShareTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChromeShareTests/Pods-ChromeShareTests.release.xcconfig"; sourceTree = "<group>"; };
+		6EE533726A786B7BA082A5F7 /* Pods-ChromeShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChromeShare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChromeShare/Pods-ChromeShare.debug.xcconfig"; sourceTree = "<group>"; };
+		70F5013761BEE9A5825EE8CA /* Pods-ChromeShareTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChromeShareTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChromeShareTests/Pods-ChromeShareTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A06072633910583EC8734562 /* Pods-ChromeShareUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChromeShareUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChromeShareUITests/Pods-ChromeShareUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D27827FC2A1C28B906B24263 /* Pods-ChromeShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChromeShare.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChromeShare/Pods-ChromeShare.release.xcconfig"; sourceTree = "<group>"; };
+		D31BB332771013D02469BD83 /* libPods-ChromeShareUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChromeShareUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4C3579A7CE76257490B413C /* Pods-ChromeShareUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChromeShareUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChromeShareUITests/Pods-ChromeShareUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DAF422F1D18099600D886E4 /* AppKit.framework in Frameworks */,
+				E2393ADEAB9BD32F289955B9 /* libPods-ChromeShare.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0431BD7E62C55AE1F2773EE /* libPods-ChromeShareTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94717ED1491D1B40C92A3322 /* libPods-ChromeShareUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +102,7 @@
 				0DAF421E1D18097500D886E4 /* ChromeShareUITests */,
 				0DAF41FE1D18097500D886E4 /* Products */,
 				0DAF422D1D18099600D886E4 /* Frameworks */,
+				56ACFBEFF74F4EEB207A3AD0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,8 +161,24 @@
 			isa = PBXGroup;
 			children = (
 				0DAF422E1D18099600D886E4 /* AppKit.framework */,
+				101C1FAD4574347F531062A1 /* libPods-ChromeShare.a */,
+				0829174101CBD589669E4E14 /* libPods-ChromeShareTests.a */,
+				D31BB332771013D02469BD83 /* libPods-ChromeShareUITests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		56ACFBEFF74F4EEB207A3AD0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6EE533726A786B7BA082A5F7 /* Pods-ChromeShare.debug.xcconfig */,
+				D27827FC2A1C28B906B24263 /* Pods-ChromeShare.release.xcconfig */,
+				70F5013761BEE9A5825EE8CA /* Pods-ChromeShareTests.debug.xcconfig */,
+				541DFBE236984E318FB1EDB6 /* Pods-ChromeShareTests.release.xcconfig */,
+				F4C3579A7CE76257490B413C /* Pods-ChromeShareUITests.debug.xcconfig */,
+				A06072633910583EC8734562 /* Pods-ChromeShareUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,9 +188,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0DAF42241D18097500D886E4 /* Build configuration list for PBXNativeTarget "ChromeShare" */;
 			buildPhases = (
+				D88E1E4830900C9C19FD6490 /* [CP] Check Pods Manifest.lock */,
 				0DAF41F91D18097500D886E4 /* Sources */,
 				0DAF41FA1D18097500D886E4 /* Frameworks */,
 				0DAF41FB1D18097500D886E4 /* Resources */,
+				FCF4881132793E1FE598C851 /* [CP] Embed Pods Frameworks */,
+				E07CFDA49DCF84376FCB305E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,9 +208,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0DAF42271D18097500D886E4 /* Build configuration list for PBXNativeTarget "ChromeShareTests" */;
 			buildPhases = (
+				D73EA30BAB2B2B6A16E5A693 /* [CP] Check Pods Manifest.lock */,
 				0DAF420C1D18097500D886E4 /* Sources */,
 				0DAF420D1D18097500D886E4 /* Frameworks */,
 				0DAF420E1D18097500D886E4 /* Resources */,
+				6F77B3A4AB084445AA1EF71D /* [CP] Embed Pods Frameworks */,
+				4988BB6BCF0C8FF7CCDA9DF7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,9 +229,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0DAF422A1D18097500D886E4 /* Build configuration list for PBXNativeTarget "ChromeShareUITests" */;
 			buildPhases = (
+				072D19A8E9A4F3A797A3E863 /* [CP] Check Pods Manifest.lock */,
 				0DAF42171D18097500D886E4 /* Sources */,
 				0DAF42181D18097500D886E4 /* Frameworks */,
 				0DAF42191D18097500D886E4 /* Resources */,
+				0EC1097B3F4D5FD8DCDE00E5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -281,6 +321,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		072D19A8E9A4F3A797A3E863 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		0EC1097B3F4D5FD8DCDE00E5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChromeShareUITests/Pods-ChromeShareUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4988BB6BCF0C8FF7CCDA9DF7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChromeShareTests/Pods-ChromeShareTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F77B3A4AB084445AA1EF71D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChromeShareTests/Pods-ChromeShareTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D73EA30BAB2B2B6A16E5A693 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D88E1E4830900C9C19FD6490 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E07CFDA49DCF84376FCB305E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChromeShare/Pods-ChromeShare-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCF4881132793E1FE598C851 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChromeShare/Pods-ChromeShare-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0DAF41F91D18097500D886E4 /* Sources */ = {
@@ -421,6 +584,7 @@
 		};
 		0DAF42251D18097500D886E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EE533726A786B7BA082A5F7 /* Pods-ChromeShare.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Mac Developer";
@@ -434,6 +598,7 @@
 		};
 		0DAF42261D18097500D886E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D27827FC2A1C28B906B24263 /* Pods-ChromeShare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Mac Developer";
@@ -447,6 +612,7 @@
 		};
 		0DAF42281D18097500D886E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70F5013761BEE9A5825EE8CA /* Pods-ChromeShareTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -460,6 +626,7 @@
 		};
 		0DAF42291D18097500D886E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 541DFBE236984E318FB1EDB6 /* Pods-ChromeShareTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -473,6 +640,7 @@
 		};
 		0DAF422B1D18097500D886E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4C3579A7CE76257490B413C /* Pods-ChromeShareUITests.debug.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = ChromeShareUITests/Info.plist;
@@ -485,6 +653,7 @@
 		};
 		0DAF422C1D18097500D886E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A06072633910583EC8734562 /* Pods-ChromeShareUITests.release.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = ChromeShareUITests/Info.plist;
@@ -514,6 +683,7 @@
 				0DAF42261D18097500D886E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0DAF42271D18097500D886E4 /* Build configuration list for PBXNativeTarget "ChromeShareTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +692,7 @@
 				0DAF42291D18097500D886E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0DAF422A1D18097500D886E4 /* Build configuration list for PBXNativeTarget "ChromeShareUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +701,7 @@
 				0DAF422C1D18097500D886E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
