@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0DAF42021D18097500D886E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF42011D18097500D886E4 /* AppDelegate.m */; };
+		0DAF42051D18097500D886E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF42041D18097500D886E4 /* main.m */; };
+		0DAF42071D18097500D886E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DAF42061D18097500D886E4 /* Assets.xcassets */; };
+		0DAF420A1D18097500D886E4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DAF42081D18097500D886E4 /* MainMenu.xib */; };
+		0DAF42151D18097500D886E4 /* ChromeShareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF42141D18097500D886E4 /* ChromeShareTests.m */; };
+		0DAF42201D18097500D886E4 /* ChromeShareUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF421F1D18097500D886E4 /* ChromeShareUITests.m */; };
+		0DAF422F1D18099600D886E4 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DAF422E1D18099600D886E4 /* AppKit.framework */; };
+		0DAF42321D180D0C00D886E4 /* JZShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF42311D180D0C00D886E4 /* JZShareManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0DAF42111D18097500D886E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0DAF41F51D18097500D886E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0DAF41FC1D18097500D886E4;
+			remoteInfo = ChromeShare;
+		};
+		0DAF421C1D18097500D886E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0DAF41F51D18097500D886E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0DAF41FC1D18097500D886E4;
+			remoteInfo = ChromeShare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DAF41FD1D18097500D886E4 /* ChromeShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChromeShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DAF42001D18097500D886E4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0DAF42011D18097500D886E4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0DAF42041D18097500D886E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0DAF42061D18097500D886E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0DAF42091D18097500D886E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		0DAF420B1D18097500D886E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DAF42101D18097500D886E4 /* ChromeShareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChromeShareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DAF42141D18097500D886E4 /* ChromeShareTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChromeShareTests.m; sourceTree = "<group>"; };
+		0DAF42161D18097500D886E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DAF421B1D18097500D886E4 /* ChromeShareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChromeShareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DAF421F1D18097500D886E4 /* ChromeShareUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChromeShareUITests.m; sourceTree = "<group>"; };
+		0DAF42211D18097500D886E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DAF422E1D18099600D886E4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		0DAF42301D180D0C00D886E4 /* JZShareManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZShareManager.h; sourceTree = "<group>"; };
+		0DAF42311D180D0C00D886E4 /* JZShareManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZShareManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0DAF41FA1D18097500D886E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DAF422F1D18099600D886E4 /* AppKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DAF420D1D18097500D886E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DAF42181D18097500D886E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DAF41F41D18097500D886E4 = {
+			isa = PBXGroup;
+			children = (
+				0DAF41FF1D18097500D886E4 /* ChromeShare */,
+				0DAF42131D18097500D886E4 /* ChromeShareTests */,
+				0DAF421E1D18097500D886E4 /* ChromeShareUITests */,
+				0DAF41FE1D18097500D886E4 /* Products */,
+				0DAF422D1D18099600D886E4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0DAF41FE1D18097500D886E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0DAF41FD1D18097500D886E4 /* ChromeShare.app */,
+				0DAF42101D18097500D886E4 /* ChromeShareTests.xctest */,
+				0DAF421B1D18097500D886E4 /* ChromeShareUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0DAF41FF1D18097500D886E4 /* ChromeShare */ = {
+			isa = PBXGroup;
+			children = (
+				0DAF42001D18097500D886E4 /* AppDelegate.h */,
+				0DAF42011D18097500D886E4 /* AppDelegate.m */,
+				0DAF42301D180D0C00D886E4 /* JZShareManager.h */,
+				0DAF42311D180D0C00D886E4 /* JZShareManager.m */,
+				0DAF42061D18097500D886E4 /* Assets.xcassets */,
+				0DAF42081D18097500D886E4 /* MainMenu.xib */,
+				0DAF420B1D18097500D886E4 /* Info.plist */,
+				0DAF42031D18097500D886E4 /* Supporting Files */,
+			);
+			path = ChromeShare;
+			sourceTree = "<group>";
+		};
+		0DAF42031D18097500D886E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0DAF42041D18097500D886E4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0DAF42131D18097500D886E4 /* ChromeShareTests */ = {
+			isa = PBXGroup;
+			children = (
+				0DAF42141D18097500D886E4 /* ChromeShareTests.m */,
+				0DAF42161D18097500D886E4 /* Info.plist */,
+			);
+			path = ChromeShareTests;
+			sourceTree = "<group>";
+		};
+		0DAF421E1D18097500D886E4 /* ChromeShareUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0DAF421F1D18097500D886E4 /* ChromeShareUITests.m */,
+				0DAF42211D18097500D886E4 /* Info.plist */,
+			);
+			path = ChromeShareUITests;
+			sourceTree = "<group>";
+		};
+		0DAF422D1D18099600D886E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0DAF422E1D18099600D886E4 /* AppKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0DAF41FC1D18097500D886E4 /* ChromeShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DAF42241D18097500D886E4 /* Build configuration list for PBXNativeTarget "ChromeShare" */;
+			buildPhases = (
+				0DAF41F91D18097500D886E4 /* Sources */,
+				0DAF41FA1D18097500D886E4 /* Frameworks */,
+				0DAF41FB1D18097500D886E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChromeShare;
+			productName = ChromeShare;
+			productReference = 0DAF41FD1D18097500D886E4 /* ChromeShare.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0DAF420F1D18097500D886E4 /* ChromeShareTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DAF42271D18097500D886E4 /* Build configuration list for PBXNativeTarget "ChromeShareTests" */;
+			buildPhases = (
+				0DAF420C1D18097500D886E4 /* Sources */,
+				0DAF420D1D18097500D886E4 /* Frameworks */,
+				0DAF420E1D18097500D886E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0DAF42121D18097500D886E4 /* PBXTargetDependency */,
+			);
+			name = ChromeShareTests;
+			productName = ChromeShareTests;
+			productReference = 0DAF42101D18097500D886E4 /* ChromeShareTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0DAF421A1D18097500D886E4 /* ChromeShareUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DAF422A1D18097500D886E4 /* Build configuration list for PBXNativeTarget "ChromeShareUITests" */;
+			buildPhases = (
+				0DAF42171D18097500D886E4 /* Sources */,
+				0DAF42181D18097500D886E4 /* Frameworks */,
+				0DAF42191D18097500D886E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0DAF421D1D18097500D886E4 /* PBXTargetDependency */,
+			);
+			name = ChromeShareUITests;
+			productName = ChromeShareUITests;
+			productReference = 0DAF421B1D18097500D886E4 /* ChromeShareUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0DAF41F51D18097500D886E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = JustZht;
+				TargetAttributes = {
+					0DAF41FC1D18097500D886E4 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 9QJ8M25J77;
+						DevelopmentTeamName = "Haotian Zheng";
+						ProvisioningStyle = Automatic;
+					};
+					0DAF420F1D18097500D886E4 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 9QJ8M25J77;
+						DevelopmentTeamName = "Haotian Zheng";
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0DAF41FC1D18097500D886E4;
+					};
+					0DAF421A1D18097500D886E4 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 9QJ8M25J77;
+						DevelopmentTeamName = "Haotian Zheng";
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0DAF41FC1D18097500D886E4;
+					};
+				};
+			};
+			buildConfigurationList = 0DAF41F81D18097500D886E4 /* Build configuration list for PBXProject "ChromeShare" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0DAF41F41D18097500D886E4;
+			productRefGroup = 0DAF41FE1D18097500D886E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0DAF41FC1D18097500D886E4 /* ChromeShare */,
+				0DAF420F1D18097500D886E4 /* ChromeShareTests */,
+				0DAF421A1D18097500D886E4 /* ChromeShareUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0DAF41FB1D18097500D886E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DAF42071D18097500D886E4 /* Assets.xcassets in Resources */,
+				0DAF420A1D18097500D886E4 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DAF420E1D18097500D886E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DAF42191D18097500D886E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0DAF41F91D18097500D886E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DAF42051D18097500D886E4 /* main.m in Sources */,
+				0DAF42021D18097500D886E4 /* AppDelegate.m in Sources */,
+				0DAF42321D180D0C00D886E4 /* JZShareManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DAF420C1D18097500D886E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DAF42151D18097500D886E4 /* ChromeShareTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DAF42171D18097500D886E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DAF42201D18097500D886E4 /* ChromeShareUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0DAF42121D18097500D886E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0DAF41FC1D18097500D886E4 /* ChromeShare */;
+			targetProxy = 0DAF42111D18097500D886E4 /* PBXContainerItemProxy */;
+		};
+		0DAF421D1D18097500D886E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0DAF41FC1D18097500D886E4 /* ChromeShare */;
+			targetProxy = 0DAF421C1D18097500D886E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0DAF42081D18097500D886E4 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0DAF42091D18097500D886E4 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0DAF42221D18097500D886E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0DAF42231D18097500D886E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0DAF42251D18097500D886E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ChromeShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JustZht.ChromeShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0DAF42261D18097500D886E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ChromeShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JustZht.ChromeShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0DAF42281D18097500D886E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ChromeShareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JustZht.ChromeShareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChromeShare.app/Contents/MacOS/ChromeShare";
+			};
+			name = Debug;
+		};
+		0DAF42291D18097500D886E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ChromeShareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JustZht.ChromeShareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChromeShare.app/Contents/MacOS/ChromeShare";
+			};
+			name = Release;
+		};
+		0DAF422B1D18097500D886E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ChromeShareUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JustZht.ChromeShareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ChromeShare;
+			};
+			name = Debug;
+		};
+		0DAF422C1D18097500D886E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ChromeShareUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JustZht.ChromeShareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ChromeShare;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0DAF41F81D18097500D886E4 /* Build configuration list for PBXProject "ChromeShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DAF42221D18097500D886E4 /* Debug */,
+				0DAF42231D18097500D886E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0DAF42241D18097500D886E4 /* Build configuration list for PBXNativeTarget "ChromeShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DAF42251D18097500D886E4 /* Debug */,
+				0DAF42261D18097500D886E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0DAF42271D18097500D886E4 /* Build configuration list for PBXNativeTarget "ChromeShareTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DAF42281D18097500D886E4 /* Debug */,
+				0DAF42291D18097500D886E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0DAF422A1D18097500D886E4 /* Build configuration list for PBXNativeTarget "ChromeShareUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DAF422B1D18097500D886E4 /* Debug */,
+				0DAF422C1D18097500D886E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0DAF41F51D18097500D886E4 /* Project object */;
+}
