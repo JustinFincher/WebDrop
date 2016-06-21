@@ -9,13 +9,15 @@
 #import "AppDelegate.h"
 #import "JZShareManager.h"
 
-@interface AppDelegate ()
+@interface AppDelegate ()<NSOpenSavePanelDelegate>
 
 @property (strong,nonatomic) JZShareManager *shareManager;
+@property (strong,nonatomic) NSOpenPanel *openPanel;
 
 @end
 
 @implementation AppDelegate
+@synthesize openPanel;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
@@ -44,10 +46,11 @@
 {
     NSError *error;
     NSURL *directoryURL = [[NSFileManager defaultManager] URLForDirectory:NSApplicationScriptsDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:YES error:&error];
-    NSOpenPanel *openPanel = [NSOpenPanel openPanel];
+    openPanel = [NSOpenPanel openPanel];
     [openPanel setLevel:CGShieldingWindowLevel()];
     [openPanel setDirectoryURL:directoryURL];
     [openPanel setCanChooseDirectories:YES];
+    [openPanel setDelegate:self];
     [openPanel setCanChooseFiles:NO];
     [openPanel setPrompt:NSLocalizedString(@"Select Script Folder", nil)];
     [openPanel setMessage:NSLocalizedString(@"Please select the Current User > Library > Application Scripts > com.JustZht.ChromeShare folder to install WebDrop Scripts", nil)];
@@ -82,6 +85,43 @@
             }
         }
     }];
+}
+
+#pragma mark - Delegate
+- (BOOL)panel:(id)sender shouldEnableURL:(NSURL *)url {
+    NSString *givenPath = [url path];
+    
+    NSError *error;
+    NSURL *directoryURL = [[NSFileManager defaultManager] URLForDirectory:NSApplicationScriptsDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:YES error:&error];
+    NSString *path = [directoryURL path];
+    
+    return [givenPath isEqualToString:path];
+}
+
+- (void)panel:(id)sender didChangeToDirectoryURL:(NSURL *)url {
+    NSString *givenPath = [url path];
+    
+    NSError *error;
+    NSURL *directoryURL = [[NSFileManager defaultManager] URLForDirectory:NSApplicationScriptsDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:YES error:&error];
+    NSString *path = [directoryURL path];
+
+    
+    if (![givenPath isEqualToString:path])
+    {
+        NSOpenPanel *panel = (NSOpenPanel *)sender;
+        [panel setDirectoryURL:directoryURL];
+    }
+}
+
+- (BOOL)panel:(id)sender validateURL:(NSURL *)url error:(NSError **)outError {
+    NSString *givenPath = [url path];
+    
+    
+    NSError *error;
+    NSURL *directoryURL = [[NSFileManager defaultManager] URLForDirectory:NSApplicationScriptsDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:YES error:&error];
+    NSString *path = [directoryURL path];
+    
+    return [givenPath isEqualToString:path];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
