@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:ChromeShare.xcodeproj">
+      location = "group:/Users/Fincher/Desktop/Fincher/Develop/Mac/ChromeShare/ChromeShare/WebDrop.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

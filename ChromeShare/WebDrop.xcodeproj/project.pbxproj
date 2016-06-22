@@ -45,17 +45,17 @@
 		0829174101CBD589669E4E14 /* libPods-ChromeShareTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChromeShareTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D761E2E1D187EC200E8D28D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		0D761E301D18816500E8D28D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		0DAF41FD1D18097500D886E4 /* ChromeShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChromeShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DAF41FD1D18097500D886E4 /* WebDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DAF42001D18097500D886E4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0DAF42011D18097500D886E4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0DAF42041D18097500D886E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0DAF42061D18097500D886E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DAF42091D18097500D886E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		0DAF420B1D18097500D886E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0DAF42101D18097500D886E4 /* ChromeShareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChromeShareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DAF42101D18097500D886E4 /* WebDrop.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebDrop.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DAF42141D18097500D886E4 /* ChromeShareTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChromeShareTests.m; sourceTree = "<group>"; };
 		0DAF42161D18097500D886E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0DAF421B1D18097500D886E4 /* ChromeShareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChromeShareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DAF421B1D18097500D886E4 /* WebDrop.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebDrop.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DAF421F1D18097500D886E4 /* ChromeShareUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChromeShareUITests.m; sourceTree = "<group>"; };
 		0DAF42211D18097500D886E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DAF422E1D18099600D886E4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -123,9 +123,9 @@
 		0DAF41FE1D18097500D886E4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0DAF41FD1D18097500D886E4 /* ChromeShare.app */,
-				0DAF42101D18097500D886E4 /* ChromeShareTests.xctest */,
-				0DAF421B1D18097500D886E4 /* ChromeShareUITests.xctest */,
+				0DAF41FD1D18097500D886E4 /* WebDrop.app */,
+				0DAF42101D18097500D886E4 /* WebDrop.xctest */,
+				0DAF421B1D18097500D886E4 /* WebDrop.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -204,9 +204,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0DAF41FC1D18097500D886E4 /* ChromeShare */ = {
+		0DAF41FC1D18097500D886E4 /* WebDrop */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0DAF42241D18097500D886E4 /* Build configuration list for PBXNativeTarget "ChromeShare" */;
+			buildConfigurationList = 0DAF42241D18097500D886E4 /* Build configuration list for PBXNativeTarget "WebDrop" */;
 			buildPhases = (
 				D88E1E4830900C9C19FD6490 /* [CP] Check Pods Manifest.lock */,
 				0DAF41F91D18097500D886E4 /* Sources */,
@@ -219,14 +219,14 @@
 			);
 			dependencies = (
 			);
-			name = ChromeShare;
+			name = WebDrop;
 			productName = ChromeShare;
-			productReference = 0DAF41FD1D18097500D886E4 /* ChromeShare.app */;
+			productReference = 0DAF41FD1D18097500D886E4 /* WebDrop.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0DAF420F1D18097500D886E4 /* ChromeShareTests */ = {
+		0DAF420F1D18097500D886E4 /* WebDropTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0DAF42271D18097500D886E4 /* Build configuration list for PBXNativeTarget "ChromeShareTests" */;
+			buildConfigurationList = 0DAF42271D18097500D886E4 /* Build configuration list for PBXNativeTarget "WebDropTests" */;
 			buildPhases = (
 				D73EA30BAB2B2B6A16E5A693 /* [CP] Check Pods Manifest.lock */,
 				0DAF420C1D18097500D886E4 /* Sources */,
@@ -240,14 +240,14 @@
 			dependencies = (
 				0DAF42121D18097500D886E4 /* PBXTargetDependency */,
 			);
-			name = ChromeShareTests;
+			name = WebDropTests;
 			productName = ChromeShareTests;
-			productReference = 0DAF42101D18097500D886E4 /* ChromeShareTests.xctest */;
+			productReference = 0DAF42101D18097500D886E4 /* WebDrop.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0DAF421A1D18097500D886E4 /* ChromeShareUITests */ = {
+		0DAF421A1D18097500D886E4 /* WebDropUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0DAF422A1D18097500D886E4 /* Build configuration list for PBXNativeTarget "ChromeShareUITests" */;
+			buildConfigurationList = 0DAF422A1D18097500D886E4 /* Build configuration list for PBXNativeTarget "WebDropUITests" */;
 			buildPhases = (
 				072D19A8E9A4F3A797A3E863 /* [CP] Check Pods Manifest.lock */,
 				0DAF42171D18097500D886E4 /* Sources */,
@@ -260,9 +260,9 @@
 			dependencies = (
 				0DAF421D1D18097500D886E4 /* PBXTargetDependency */,
 			);
-			name = ChromeShareUITests;
+			name = WebDropUITests;
 			productName = ChromeShareUITests;
-			productReference = 0DAF421B1D18097500D886E4 /* ChromeShareUITests.xctest */;
+			productReference = 0DAF421B1D18097500D886E4 /* WebDrop.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -301,7 +301,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0DAF41F81D18097500D886E4 /* Build configuration list for PBXProject "ChromeShare" */;
+			buildConfigurationList = 0DAF41F81D18097500D886E4 /* Build configuration list for PBXProject "WebDrop" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -316,9 +316,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0DAF41FC1D18097500D886E4 /* ChromeShare */,
-				0DAF420F1D18097500D886E4 /* ChromeShareTests */,
-				0DAF421A1D18097500D886E4 /* ChromeShareUITests */,
+				0DAF41FC1D18097500D886E4 /* WebDrop */,
+				0DAF420F1D18097500D886E4 /* WebDropTests */,
+				0DAF421A1D18097500D886E4 /* WebDropUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -507,12 +507,12 @@
 /* Begin PBXTargetDependency section */
 		0DAF42121D18097500D886E4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0DAF41FC1D18097500D886E4 /* ChromeShare */;
+			target = 0DAF41FC1D18097500D886E4 /* WebDrop */;
 			targetProxy = 0DAF42111D18097500D886E4 /* PBXContainerItemProxy */;
 		};
 		0DAF421D1D18097500D886E4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0DAF41FC1D18097500D886E4 /* ChromeShare */;
+			target = 0DAF41FC1D18097500D886E4 /* WebDrop */;
 			targetProxy = 0DAF421C1D18097500D886E4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -643,7 +643,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.JustZht.ChromeShare;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WebDrop;
 			};
 			name = Debug;
 		};
@@ -659,7 +659,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.JustZht.ChromeShare;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WebDrop;
 			};
 			name = Release;
 		};
@@ -672,8 +672,8 @@
 				INFOPLIST_FILE = ChromeShareTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JustZht.ChromeShareTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChromeShare.app/Contents/MacOS/ChromeShare";
+				PRODUCT_NAME = WebDrop;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebDrop.app/Contents/MacOS/WebDrop";
 			};
 			name = Debug;
 		};
@@ -686,8 +686,8 @@
 				INFOPLIST_FILE = ChromeShareTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JustZht.ChromeShareTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChromeShare.app/Contents/MacOS/ChromeShare";
+				PRODUCT_NAME = WebDrop;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebDrop.app/Contents/MacOS/WebDrop";
 			};
 			name = Release;
 		};
@@ -699,7 +699,7 @@
 				INFOPLIST_FILE = ChromeShareUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JustZht.ChromeShareUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WebDrop;
 				TEST_TARGET_NAME = ChromeShare;
 			};
 			name = Debug;
@@ -712,7 +712,7 @@
 				INFOPLIST_FILE = ChromeShareUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JustZht.ChromeShareUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WebDrop;
 				TEST_TARGET_NAME = ChromeShare;
 			};
 			name = Release;
@@ -720,7 +720,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0DAF41F81D18097500D886E4 /* Build configuration list for PBXProject "ChromeShare" */ = {
+		0DAF41F81D18097500D886E4 /* Build configuration list for PBXProject "WebDrop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0DAF42221D18097500D886E4 /* Debug */,
@@ -729,7 +729,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0DAF42241D18097500D886E4 /* Build configuration list for PBXNativeTarget "ChromeShare" */ = {
+		0DAF42241D18097500D886E4 /* Build configuration list for PBXNativeTarget "WebDrop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0DAF42251D18097500D886E4 /* Debug */,
@@ -738,7 +738,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0DAF42271D18097500D886E4 /* Build configuration list for PBXNativeTarget "ChromeShareTests" */ = {
+		0DAF42271D18097500D886E4 /* Build configuration list for PBXNativeTarget "WebDropTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0DAF42281D18097500D886E4 /* Debug */,
@@ -747,7 +747,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0DAF422A1D18097500D886E4 /* Build configuration list for PBXNativeTarget "ChromeShareUITests" */ = {
+		0DAF422A1D18097500D886E4 /* Build configuration list for PBXNativeTarget "WebDropUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0DAF422B1D18097500D886E4 /* Debug */,
