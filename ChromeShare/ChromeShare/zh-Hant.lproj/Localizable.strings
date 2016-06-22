@@ -2,6 +2,8 @@
 "Share Current Chrome Canary Tab" = "分享當前 Chrome Canary Tab";
 "Share Current Safari Tab" = "分享當前 Safari Tab";
 "Share Current Vivaldi Tab" = "分享當前 Vivaldi Tab";
+"Share Current WebKit Tab" = "分享當前 WebKit Tab";
+"Share Current Safari Technology Preview Tab" = "分享當前 Safari Technology Preview Tab";
 "Settings" = "設置";
 "Quit App" = "退出";
 "OK" = "好";

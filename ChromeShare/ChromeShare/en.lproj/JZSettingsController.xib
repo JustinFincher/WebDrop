@@ -42,14 +42,6 @@
                 <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g31-Jd-s0n" customClass="MASShortcutView">
                     <rect key="frame" x="20" y="186" width="158" height="19"/>
                 </customView>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3s2-nT-Bmx">
-                    <rect key="frame" x="50" y="213" width="99" height="17"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Global Shortcut" id="r5G-He-P7T">
-                        <font key="font" size="12" name="Avenir-Book"/>
-                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                    </textFieldCell>
-                </textField>
                 <button hidden="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ihw-8Q-ZS5">
                     <rect key="frame" x="37" y="162" width="125" height="18"/>
                     <buttonCell key="cell" type="check" title="Open On Startup" bezelStyle="regularSquare" imagePosition="left" enabled="NO" state="on" inset="2" id="nnp-No-lYC">
@@ -63,24 +55,6 @@
                         <binding destination="E8c-1V-ixB" name="value" keyPath="values.openOnStartupEnabled" id="LAq-90-fMT"/>
                     </connections>
                 </button>
-                <button hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tx9-nk-7oF">
-                    <rect key="frame" x="35" y="79" width="126" height="32"/>
-                    <buttonCell key="cell" type="push" title="Delete Scripts" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="RNy-cF-0vg">
-                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" metaFont="system"/>
-                    </buttonCell>
-                    <connections>
-                        <action selector="deleteScriptsButtonPressed:" target="-2" id="DSf-Mw-WnN"/>
-                    </connections>
-                </button>
-                <textField hidden="YES" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zTb-5E-ibj">
-                    <rect key="frame" x="18" y="113" width="162" height="39"/>
-                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="When deleted installed scripts, you need to reopen app and install again." id="ciA-jI-0tU">
-                        <font key="font" metaFont="system" size="10"/>
-                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                    </textFieldCell>
-                </textField>
                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ugA-fi-d3T">
                     <rect key="frame" x="32" y="46" width="133" height="32"/>
                     <buttonCell key="cell" type="push" title="Contact Author" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="erP-QK-3eG">
@@ -91,6 +65,14 @@
                         <action selector="contactAuthorButtonPressed:" target="-2" id="Z1c-10-hbK"/>
                     </connections>
                 </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3s2-nT-Bmx">
+                    <rect key="frame" x="40" y="213" width="120" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Global Shortcut" id="r5G-He-P7T">
+                        <font key="font" size="12" name="Avenir-Book"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
             </subviews>
             <constraints>
                 <constraint firstItem="0iG-GX-OhB" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="KGX-xc-YeO"/>

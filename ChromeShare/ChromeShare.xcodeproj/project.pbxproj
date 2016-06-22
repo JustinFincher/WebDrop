@@ -18,7 +18,6 @@
 		0DAF42321D180D0C00D886E4 /* JZShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF42311D180D0C00D886E4 /* JZShareManager.m */; };
 		0DAF42441D1829E400D886E4 /* JZSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF42421D1829E400D886E4 /* JZSettingsController.m */; };
 		0DC6916C1D183629009533BA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DC6916B1D183629009533BA /* Cocoa.framework */; };
-		0DDD12AE1D1869EF0043AE0E /* Automation.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 0DDD12AD1D1869EF0043AE0E /* Automation.scpt */; };
 		0DDD12AF1D1878350043AE0E /* JZSettingsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DDD12B11D1878350043AE0E /* JZSettingsController.xib */; };
 		94717ED1491D1B40C92A3322 /* libPods-ChromeShareUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D31BB332771013D02469BD83 /* libPods-ChromeShareUITests.a */; };
 		C0431BD7E62C55AE1F2773EE /* libPods-ChromeShareTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0829174101CBD589669E4E14 /* libPods-ChromeShareTests.a */; };
@@ -66,7 +65,6 @@
 		0DAF42421D1829E400D886E4 /* JZSettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZSettingsController.m; sourceTree = "<group>"; };
 		0DC6916B1D183629009533BA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		0DDD12AC1D18631A0043AE0E /* ChromeShare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ChromeShare.entitlements; sourceTree = "<group>"; };
-		0DDD12AD1D1869EF0043AE0E /* Automation.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = Automation.scpt; sourceTree = "<group>"; };
 		0DDD12B01D1878350043AE0E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/JZSettingsController.xib; sourceTree = "<group>"; };
 		0DDD12B31D1878680043AE0E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/JZSettingsController.xib"; sourceTree = "<group>"; };
 		0DDD12B51D18786C0043AE0E /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hant"; path = "zh-Hant.lproj/JZSettingsController.xib"; sourceTree = "<group>"; };
@@ -144,7 +142,6 @@
 				0DAF42421D1829E400D886E4 /* JZSettingsController.m */,
 				0D761E2F1D187EC200E8D28D /* Localizable.strings */,
 				0DDD12B11D1878350043AE0E /* JZSettingsController.xib */,
-				0DDD12AD1D1869EF0043AE0E /* Automation.scpt */,
 				0DAF42061D18097500D886E4 /* Assets.xcassets */,
 				0DAF42081D18097500D886E4 /* MainMenu.xib */,
 				0DAF420B1D18097500D886E4 /* Info.plist */,
@@ -332,7 +329,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D761E2D1D187EC200E8D28D /* Localizable.strings in Resources */,
-				0DDD12AE1D1869EF0043AE0E /* Automation.scpt in Resources */,
 				0DDD12AF1D1878350043AE0E /* JZSettingsController.xib in Resources */,
 				0DAF42071D18097500D886E4 /* Assets.xcassets in Resources */,
 				0DAF420A1D18097500D886E4 /* MainMenu.xib in Resources */,

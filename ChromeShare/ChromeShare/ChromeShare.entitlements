@@ -12,5 +12,14 @@
 	<true/>
 	<key>com.apple.security.print</key>
 	<true/>
+	<key>com.apple.security.temporary-exception.apple-events</key>
+	<array>
+		<string>com.google.chrome.canary</string>
+		<string>com.google.chrome</string>
+		<string>com.apple.safari</string>
+		<string>com.vivaldi.vivaldi</string>
+		<string>org.webkit.nightly.webKit</string>
+		<string>com.apple.safaritechnologypreview</string>
+	</array>
 </dict>
 </plist>
