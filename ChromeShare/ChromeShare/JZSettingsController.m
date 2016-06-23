@@ -85,7 +85,6 @@ static void *MASObservingContext = &MASObservingContext;
     [[NSWorkspace sharedWorkspace] openURL:url];
 }
 
-
 - (IBAction)closeButtonPressed:(id)sender
 {
     [_popover performClose:self];
