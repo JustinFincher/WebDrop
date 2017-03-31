@@ -1,4 +1,4 @@
-# ChromeShare  
+# WebDrop  
 <img width="1440" alt="img" src="https://github.com/JustinFincher/WebDrop/raw/master/mas.jpg">  
 ### English : 
 Share your Mac's current chrome tab via AirDrop.  
