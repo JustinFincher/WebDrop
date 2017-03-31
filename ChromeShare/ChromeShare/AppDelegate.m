@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
 #import "JZShareManager.h"
 
 @interface AppDelegate ()<NSOpenSavePanelDelegate>
@@ -22,6 +24,7 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
     _shareManager = [JZShareManager sharedManager];
+    [Fabric with:@[[Crashlytics class]]];
 }
 
 #pragma mark - Delegate
