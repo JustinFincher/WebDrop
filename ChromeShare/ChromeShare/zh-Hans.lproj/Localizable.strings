@@ -11,3 +11,4 @@
 "Script Installed" = "脚本安装完成";
 "The Automation script was installed succcessfully." = "自动化脚本已经安装，可以使用";
 "Please select the Current User > Library > Application Scripts > com.JustZht.ChromeShare folder to install WebDrop Scripts" = "请选择当前文件夹 User > Library > Application Scripts > com.JustZht.ChromeShare 以正确安装 WebDrop 脚本";
+"Share Current Pasteboard Link" = "分享当前剪贴板链接";
