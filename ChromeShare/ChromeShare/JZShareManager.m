@@ -70,6 +70,13 @@ static NSString *const MASOpenMenuShortcutKey = @"openMenuShortcutKey";
     shareOperaMenuItem.target = self;
     [statusBarMenu addItem:shareOperaMenuItem];
     
+        [statusBarMenu addItem:[NSMenuItem separatorItem]];
+    
+    NSMenuItem *sharePasteboardMenuItem = [[NSMenuItem alloc] initWithTitle:NSLocalizedString(@"Share Current Pasteboard Link", nil) action:@selector(sharePasteboard) keyEquivalent:@"l"];
+    sharePasteboardMenuItem.target = self;
+    [statusBarMenu addItem:sharePasteboardMenuItem];
+    
+    
     [statusBarMenu addItem:[NSMenuItem separatorItem]];
     
     NSMenuItem *settingsItem = [[NSMenuItem alloc] initWithTitle:NSLocalizedString(@"Settings", nil) action:@selector(goSettings) keyEquivalent:@"S"];
@@ -136,6 +143,13 @@ static NSString *const MASOpenMenuShortcutKey = @"openMenuShortcutKey";
 - (void)shareWebKitTab
 {
     [self getURLWithScript:@"tell application \"WebKit\" to return URL of front document as string"];
+}
+- (void)sharePasteboard
+{
+    NSPasteboard*  pasteboard  = [NSPasteboard generalPasteboard];
+    NSString* string = [pasteboard  stringForType:NSPasteboardTypeString];
+    NSURL *url = [NSURL URLWithString:string];
+    [self shareString:url];
 }
 
 - (void)getURLWithScript:(NSString *)scriptString
