@@ -149,7 +149,22 @@ static NSString *const MASOpenMenuShortcutKey = @"openMenuShortcutKey";
     NSPasteboard*  pasteboard  = [NSPasteboard generalPasteboard];
     NSString* string = [pasteboard  stringForType:NSPasteboardTypeString];
     NSURL *url = [NSURL URLWithString:string];
-    [self shareString:url];
+    NSURLRequest *req = [NSURLRequest requestWithURL:url];
+    bool valid = [NSURLConnection canHandleRequest:req];
+    if (valid)
+    {
+        [self shareString:url];}
+    else
+    {
+        NSAlert *alert = [NSAlert alertWithMessageText: @"URL is not valid"
+                                         defaultButton: @"OK"
+                                       alternateButton: nil
+                                           otherButton: nil
+                             informativeTextWithFormat: @"Try with a link with http:// or https://"];
+        
+        [[NSRunningApplication currentApplication] activateWithOptions:NSApplicationActivateIgnoringOtherApps];
+        [alert runModal];
+    }
 }
 
 - (void)getURLWithScript:(NSString *)scriptString
