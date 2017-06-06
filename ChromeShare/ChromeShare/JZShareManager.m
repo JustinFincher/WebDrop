@@ -190,4 +190,10 @@ static NSString *const MASOpenMenuShortcutKey = @"openMenuShortcutKey";
     [service performWithItems:shareItems];
 }
 
+- (void)shareViaAirDrop:(NSPasteboard *)pboard
+			   userData:(NSString *)userData error:(NSString **)error
+{
+#warning todo
+}
+
 @end
