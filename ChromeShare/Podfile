@@ -8,6 +8,7 @@ target 'WebDrop' do
   # Pods for ChromeShare
   pod 'MASShortcut'
   pod 'Fabric'
-pod 'Crashlytics'
+	pod 'Crashlytics'
+	pod 'LetsMove'
 
 end

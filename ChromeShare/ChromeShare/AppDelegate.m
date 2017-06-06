@@ -10,6 +10,7 @@
 #import <Fabric/Fabric.h>
 #import <Crashlytics/Crashlytics.h>
 #import "JZShareManager.h"
+#import "PFMoveApplication.h"
 
 @interface AppDelegate ()<NSOpenSavePanelDelegate>
 
@@ -20,6 +21,11 @@
 
 @implementation AppDelegate
 @synthesize openPanel;
+
+- (void)applicationWillFinishLaunching:(NSNotification *)notification
+{
+	PFMoveToApplicationsFolderIfNecessary();
+}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application

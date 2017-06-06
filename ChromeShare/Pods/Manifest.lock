@@ -2,18 +2,21 @@ PODS:
   - Crashlytics (3.8.4):
     - Fabric (~> 1.6.3)
   - Fabric (1.6.11)
-  - MASShortcut (2.3.3)
+  - LetsMove (1.22)
+  - MASShortcut (2.3.6)
 
 DEPENDENCIES:
   - Crashlytics
   - Fabric
+  - LetsMove
   - MASShortcut
 
 SPEC CHECKSUMS:
   Crashlytics: 79e236942ca1e7fc641df1feb9a275360a78ab6a
   Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
-  MASShortcut: 38a76c9ea927de770c0a97ae28b15d18d6268b24
+  LetsMove: 407d4d14815e6dc1549b6a9fe8e4b0f6aed3e305
+  MASShortcut: 9c215e8a8a78f3d01ce56da48e2730ab66b538fa
 
-PODFILE CHECKSUM: 6f3880c40562198c58ddd0ba3faa026278b880d3
+PODFILE CHECKSUM: 64f1532839370271416d5a4557505a265c610696
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.2.1
