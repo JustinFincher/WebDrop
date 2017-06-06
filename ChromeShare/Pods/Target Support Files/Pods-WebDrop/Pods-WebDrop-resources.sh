@@ -21,6 +21,9 @@ case "${TARGETED_DEVICE_FAMILY}" in
   3)
     TARGET_DEVICE_ARGS="--target-device tv"
     ;;
+  4)
+    TARGET_DEVICE_ARGS="--target-device watch"
+    ;;
   *)
     TARGET_DEVICE_ARGS="--target-device mac"
     ;;
@@ -77,9 +80,57 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "LetsMove/ca.lproj"
+  install_resource "LetsMove/cs.lproj"
+  install_resource "LetsMove/da.lproj"
+  install_resource "LetsMove/de.lproj"
+  install_resource "LetsMove/en.lproj"
+  install_resource "LetsMove/es.lproj"
+  install_resource "LetsMove/fr.lproj"
+  install_resource "LetsMove/hu.lproj"
+  install_resource "LetsMove/it.lproj"
+  install_resource "LetsMove/ja.lproj"
+  install_resource "LetsMove/ko.lproj"
+  install_resource "LetsMove/mk.lproj"
+  install_resource "LetsMove/nb.lproj"
+  install_resource "LetsMove/nl.lproj"
+  install_resource "LetsMove/pl.lproj"
+  install_resource "LetsMove/pt.lproj"
+  install_resource "LetsMove/pt_BR.lproj"
+  install_resource "LetsMove/ru.lproj"
+  install_resource "LetsMove/sk.lproj"
+  install_resource "LetsMove/sr.lproj"
+  install_resource "LetsMove/sv.lproj"
+  install_resource "LetsMove/tr.lproj"
+  install_resource "LetsMove/zh_CN.lproj"
+  install_resource "LetsMove/zh_TW.lproj"
   install_resource "$PODS_CONFIGURATION_BUILD_DIR/MASShortcut/MASShortcut.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "LetsMove/ca.lproj"
+  install_resource "LetsMove/cs.lproj"
+  install_resource "LetsMove/da.lproj"
+  install_resource "LetsMove/de.lproj"
+  install_resource "LetsMove/en.lproj"
+  install_resource "LetsMove/es.lproj"
+  install_resource "LetsMove/fr.lproj"
+  install_resource "LetsMove/hu.lproj"
+  install_resource "LetsMove/it.lproj"
+  install_resource "LetsMove/ja.lproj"
+  install_resource "LetsMove/ko.lproj"
+  install_resource "LetsMove/mk.lproj"
+  install_resource "LetsMove/nb.lproj"
+  install_resource "LetsMove/nl.lproj"
+  install_resource "LetsMove/pl.lproj"
+  install_resource "LetsMove/pt.lproj"
+  install_resource "LetsMove/pt_BR.lproj"
+  install_resource "LetsMove/ru.lproj"
+  install_resource "LetsMove/sk.lproj"
+  install_resource "LetsMove/sr.lproj"
+  install_resource "LetsMove/sv.lproj"
+  install_resource "LetsMove/tr.lproj"
+  install_resource "LetsMove/zh_CN.lproj"
+  install_resource "LetsMove/zh_TW.lproj"
   install_resource "$PODS_CONFIGURATION_BUILD_DIR/MASShortcut/MASShortcut.bundle"
 fi
 

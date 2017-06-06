@@ -190,4 +190,22 @@ static NSString *const MASOpenMenuShortcutKey = @"openMenuShortcutKey";
     [service performWithItems:shareItems];
 }
 
+- (void)shareViaAirDrop:(NSPasteboard *)pboard
+			   userData:(NSString *)userData error:(NSString **)error
+{
+	NSArray *classes = [[NSArray alloc] initWithObjects:[NSString class],[NSURL class], nil];
+	NSDictionary *options = [NSDictionary dictionary];
+	BOOL canRead = [pboard canReadObjectForClasses:classes options:options];
+	if (!canRead)
+	{
+		*error = NSLocalizedString(@"Error: couldn't set board.",
+								   @"no url found");
+		return;
+	}
+	
+	NSString *dropString = [pboard stringForType:NSPasteboardTypeString];
+	NSURL *url = [NSURL URLWithString:dropString];
+	[self shareString:url];
+}
+
 @end

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D2595AB1EE6790C004B21BD /* StartAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2595A81EE6790C004B21BD /* StartAtLoginController.m */; };
+		0D2595AC1EE6790C004B21BD /* JZLaunchOnLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2595AA1EE6790C004B21BD /* JZLaunchOnLoginManager.m */; };
+		0D2595B61EE67967004B21BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2595B51EE67967004B21BD /* AppDelegate.m */; };
+		0D2595B91EE67967004B21BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2595B81EE67967004B21BD /* main.m */; };
+		0D2595BE1EE67967004B21BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D2595BD1EE67967004B21BD /* Assets.xcassets */; };
+		0D2595C71EE679C7004B21BD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D2595C61EE679C7004B21BD /* MainMenu.xib */; };
 		0D761E2D1D187EC200E8D28D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0D761E2F1D187EC200E8D28D /* Localizable.strings */; };
 		0DAF42021D18097500D886E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF42011D18097500D886E4 /* AppDelegate.m */; };
 		0DAF42051D18097500D886E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF42041D18097500D886E4 /* main.m */; };
@@ -40,6 +46,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D2595A71EE6790C004B21BD /* StartAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartAtLoginController.h; sourceTree = "<group>"; };
+		0D2595A81EE6790C004B21BD /* StartAtLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartAtLoginController.m; sourceTree = "<group>"; };
+		0D2595A91EE6790C004B21BD /* JZLaunchOnLoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZLaunchOnLoginManager.h; sourceTree = "<group>"; };
+		0D2595AA1EE6790C004B21BD /* JZLaunchOnLoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZLaunchOnLoginManager.m; sourceTree = "<group>"; };
+		0D2595B21EE67966004B21BD /* WebDropLoginHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebDropLoginHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D2595B41EE67967004B21BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0D2595B51EE67967004B21BD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0D2595B81EE67967004B21BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0D2595BD1EE67967004B21BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0D2595C21EE67967004B21BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D2595C61EE679C7004B21BD /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		0D761E2E1D187EC200E8D28D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		0D761E301D18816500E8D28D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		0DAF41FD1D18097500D886E4 /* WebDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +88,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0D2595AF1EE67966004B21BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0DAF41FA1D18097500D886E4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -98,12 +122,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D2595AD1EE67912004B21BD /* LaunchOnLogin */ = {
+			isa = PBXGroup;
+			children = (
+				0D2595A71EE6790C004B21BD /* StartAtLoginController.h */,
+				0D2595A81EE6790C004B21BD /* StartAtLoginController.m */,
+				0D2595A91EE6790C004B21BD /* JZLaunchOnLoginManager.h */,
+				0D2595AA1EE6790C004B21BD /* JZLaunchOnLoginManager.m */,
+			);
+			name = LaunchOnLogin;
+			sourceTree = "<group>";
+		};
+		0D2595B31EE67967004B21BD /* WebDropLoginHelper */ = {
+			isa = PBXGroup;
+			children = (
+				0D2595B41EE67967004B21BD /* AppDelegate.h */,
+				0D2595B51EE67967004B21BD /* AppDelegate.m */,
+				0D2595C61EE679C7004B21BD /* MainMenu.xib */,
+				0D2595BD1EE67967004B21BD /* Assets.xcassets */,
+				0D2595C21EE67967004B21BD /* Info.plist */,
+				0D2595B71EE67967004B21BD /* Supporting Files */,
+			);
+			path = WebDropLoginHelper;
+			sourceTree = "<group>";
+		};
+		0D2595B71EE67967004B21BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0D2595B81EE67967004B21BD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		0DAF41F41D18097500D886E4 = {
 			isa = PBXGroup;
 			children = (
 				0DAF41FF1D18097500D886E4 /* ChromeShare */,
 				0DAF42131D18097500D886E4 /* ChromeShareTests */,
 				0DAF421E1D18097500D886E4 /* ChromeShareUITests */,
+				0D2595B31EE67967004B21BD /* WebDropLoginHelper */,
 				0DAF41FE1D18097500D886E4 /* Products */,
 				0DAF422D1D18099600D886E4 /* Frameworks */,
 				16F38236108A179DB2987F5A /* Pods */,
@@ -116,6 +173,7 @@
 				0DAF41FD1D18097500D886E4 /* WebDrop.app */,
 				0DAF42101D18097500D886E4 /* WebDrop.xctest */,
 				0DAF421B1D18097500D886E4 /* WebDrop.xctest */,
+				0D2595B21EE67966004B21BD /* WebDropLoginHelper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,6 +188,7 @@
 				0DAF42311D180D0C00D886E4 /* JZShareManager.m */,
 				0DAF42411D1829E400D886E4 /* JZSettingsController.h */,
 				0DAF42421D1829E400D886E4 /* JZSettingsController.m */,
+				0D2595AD1EE67912004B21BD /* LaunchOnLogin */,
 				0D761E2F1D187EC200E8D28D /* Localizable.strings */,
 				0DDD12B11D1878350043AE0E /* JZSettingsController.xib */,
 				0DAF42061D18097500D886E4 /* Assets.xcassets */,
@@ -188,6 +247,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0D2595B11EE67966004B21BD /* WebDropLoginHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D2595C31EE67967004B21BD /* Build configuration list for PBXNativeTarget "WebDropLoginHelper" */;
+			buildPhases = (
+				0D2595AE1EE67966004B21BD /* Sources */,
+				0D2595AF1EE67966004B21BD /* Frameworks */,
+				0D2595B01EE67966004B21BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebDropLoginHelper;
+			productName = WebDropLoginHelper;
+			productReference = 0D2595B21EE67966004B21BD /* WebDropLoginHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
 		0DAF41FC1D18097500D886E4 /* WebDrop */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0DAF42241D18097500D886E4 /* Build configuration list for PBXNativeTarget "WebDrop" */;
@@ -252,9 +328,14 @@
 		0DAF41F51D18097500D886E4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = JustZht;
 				TargetAttributes = {
+					0D2595B11EE67966004B21BD = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 9QJ8M25J77;
+						ProvisioningStyle = Automatic;
+					};
 					0DAF41FC1D18097500D886E4 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 9QJ8M25J77;
@@ -300,11 +381,21 @@
 				0DAF41FC1D18097500D886E4 /* WebDrop */,
 				0DAF420F1D18097500D886E4 /* WebDropTests */,
 				0DAF421A1D18097500D886E4 /* WebDropUITests */,
+				0D2595B11EE67966004B21BD /* WebDropLoginHelper */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0D2595B01EE67966004B21BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D2595BE1EE67967004B21BD /* Assets.xcassets in Resources */,
+				0D2595C71EE679C7004B21BD /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0DAF41FB1D18097500D886E4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -401,19 +492,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0D2595AE1EE67966004B21BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D2595B91EE67967004B21BD /* main.m in Sources */,
+				0D2595B61EE67967004B21BD /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0DAF41F91D18097500D886E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0DAF42051D18097500D886E4 /* main.m in Sources */,
+				0D2595AC1EE6790C004B21BD /* JZLaunchOnLoginManager.m in Sources */,
 				0DAF42021D18097500D886E4 /* AppDelegate.m in Sources */,
 				0DAF42441D1829E400D886E4 /* JZSettingsController.m in Sources */,
+				0D2595AB1EE6790C004B21BD /* StartAtLoginController.m in Sources */,
 				0DAF42321D180D0C00D886E4 /* JZShareManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -480,10 +582,45 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0D2595C41EE67967004B21BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9QJ8M25J77;
+				INFOPLIST_FILE = WebDropLoginHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JustZht.WebDropLoginHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		0D2595C51EE67967004B21BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9QJ8M25J77;
+				INFOPLIST_FILE = WebDropLoginHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JustZht.WebDropLoginHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
 		0DAF42221D18097500D886E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -495,8 +632,10 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -529,6 +668,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -540,8 +680,10 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -648,6 +790,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0D2595C31EE67967004B21BD /* Build configuration list for PBXNativeTarget "WebDropLoginHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D2595C41EE67967004B21BD /* Debug */,
+				0D2595C51EE67967004B21BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		0DAF41F81D18097500D886E4 /* Build configuration list for PBXProject "WebDrop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

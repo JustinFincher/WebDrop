@@ -18,4 +18,7 @@
 
 + (id)sharedManager;
 
+- (void)shareViaAirDrop:(NSPasteboard *)pboard
+			   userData:(NSString *)userData error:(NSString **)error;
+
 @end

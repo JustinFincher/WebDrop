@@ -8,11 +8,12 @@
 
 #import "JZSettingsController.h"
 #import <MASShortcut/Shortcut.h>
+#import "JZLaunchOnLoginManager.h"
 
 static NSString *const MASOpenMenuShortcutKey = @"openMenuShortcutKey";
 static NSString *const MASCustomShortcutEnabledKey = @"customShortcutEnabled";
 static NSString *const MASHardcodedShortcutEnabledKey = @"hardcodedShortcutEnabled";
-static NSString *const MASOpenOnStartupEnabledKey = @"openOnStartupEnabled";
+//static NSString *const MASOpenOnStartupEnabledKey = @"openOnStartupEnabled";
 static void *MASObservingContext = &MASObservingContext;
 
 @interface JZSettingsController ()
@@ -31,16 +32,13 @@ static void *MASObservingContext = &MASObservingContext;
     [defaults registerDefaults:@{
                                  MASHardcodedShortcutEnabledKey : @YES,
                                  MASCustomShortcutEnabledKey : @YES,
-                                 MASOpenOnStartupEnabledKey : @NO
                                  }];
     [self.shortcutView setAssociatedUserDefaultsKey:MASOpenMenuShortcutKey];
     [_shortcutView setAssociatedUserDefaultsKey:MASOpenMenuShortcutKey];
     [_shortcutView bind:@"enabled" toObject:defaults
             withKeyPath:MASCustomShortcutEnabledKey options:nil];
-    
-    [defaults addObserver:self forKeyPath:MASOpenOnStartupEnabledKey
-                  options:NSKeyValueObservingOptionInitial|NSKeyValueObservingOptionNew
-                  context:MASObservingContext];
+	
+	[self.openOnStartupCheck setState:[[JZLaunchOnLoginManager sharedManager] isLaunchOnLogin] ? NSOnState : NSOffState];
     
 }
 - (void) observeValueForKeyPath: (NSString*) keyPath ofObject: (id) object change: (NSDictionary*) change context: (void*) context
@@ -49,22 +47,11 @@ static void *MASObservingContext = &MASObservingContext;
         [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
         return;
     }
-    
-    BOOL newValue = [[change objectForKey:NSKeyValueChangeNewKey] boolValue];
-    if ([keyPath isEqualToString:MASOpenOnStartupEnabledKey]) {
-        [self setOpenOnStartupEnabled:newValue];
-    }
 }
-- (void) setOpenOnStartupEnabled: (BOOL) enabled
+- (IBAction)launchOnLoginChanged:(NSButton *)sender
 {
-    if (enabled)
-    {
-        
-    }
-    else
-    {
-        
-    }
+	BOOL isOn = (sender.state == NSOnState);
+	[[JZLaunchOnLoginManager sharedManager] setLaunchOnLogin:isOn completeHandler:nil error:nil];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
